@@ -9,7 +9,6 @@ class PostService extends PolymerElement {
   }
     
   List postsLoaded(e, detail, node) {
-    //posts = $['ajax'].response;
     posts = detail['response'];
     return posts;
   }

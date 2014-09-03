@@ -1,21 +1,19 @@
 ﻿import 'package:polymer/polymer.dart';
+import 'package:template_binding/template_binding.dart';
 
 @CustomTag('post-card')
 class PostCard extends PolymerElement {
   
-  //@observable bool favorite;
+  @published bool favorite;
   
   PostCard.created() : super.created() {
   }
-  
+    
   favoriteTapped(event, detail, sender) {
-    //favorite = !favorite;
-    //print(favorite);
-    
-    // Where is the boolean favorite? How is this class associated with post in myPosts
-    // need to invert value of favorite. Is it in sender?
-    print(detail.toString());
-    
+    //print(templateBind(sender).model.model.favorite);
+    //var uid = templateBind(sender).model.uid;
+    //favorite = templateBind(sender).model.favorite;
+    //print(sender['favorite']);
     this.fire('favorite-tap');
   }
 }
