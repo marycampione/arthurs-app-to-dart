@@ -20,13 +20,7 @@ class PostList extends PolymerElement {
 
 
   handleFavorite(event, detail, sender) {
-    //print(templateBind(sender).model.favorite);
-    //print(sender['post']);
-    //var response = detail['post'];
-    //print(response);
-    //var post = templateBind(sender).model.post;
-    //var post = sender.templateInstance.model.post;
-    //post.favorite = !post.favorite;
-    //this.$.service.setFavorite(post.uid, post.favorite);
+    var post = templateBind(sender).templateInstance.model['post'];
+    //$['service'].setFavorite(post.uid, post.favorite);
   }
 }

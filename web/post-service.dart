@@ -1,15 +1,18 @@
 import 'package:polymer/polymer.dart';
 
+import 'post_model.dart';
+
 @CustomTag('post-service')
 class PostService extends PolymerElement {
 
-  @observable List<Map> posts = toObservable([]);
+  @published List<Post> posts;
 
   PostService.created() : super.created() {
   }
     
   List postsLoaded(e, detail, node) {
-    posts = detail['response'];
+    posts = toObservable(detail['response']
+        .map((s) => new Post.fromJson(s)).toList());
     return posts;
   }
 }
