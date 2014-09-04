@@ -13,23 +13,24 @@
       margin-bottom: 30px;
     }
     </style>
-    
+
     <post-service id="service" posts="{{myPosts}}"></post-service>
-     
+
     <div layout vertical center>
       <template repeat="{{post in myPosts}}">
-      
+
         <post-card
-          favorite="{{post['favorite']}}"
-          hidden?="{{show == 'favorites' && !post['favorite']}}">
-          <img src="{{post['avatar']}}" width="70" height="70">
-          <h2>{{post['username']}}</h2>
-          <p>{{post['text']}}</p>
+          favorite="{{post.favorite}}"
+          on-favorite-tap="{{handleFavorite}}"
+          hidden?="{{show == 'favorites' && !post.favorite}}">
+          <img src="{{post.avatar}}" width="70" height="70">
+          <h2>{{post.username}}</h2>
+          <p>{{post.text}}</p>
         </post-card>
-        
+
       </template>
     </div>
-    
+
   </template>
 
   <script type="application/dart"

@@ -3,10 +3,10 @@
 @CustomTag('post-card')
 class PostCard extends PolymerElement {
   
-  @reflectable @published bool favorite;
+  @PublishedProperty(reflect: true)
+  bool favorite;
   
-  PostCard.created() : super.created() {
-  }
+  PostCard.created() : super.created();
     
   favoriteTapped(event, detail, sender) {
     favorite = !favorite;
