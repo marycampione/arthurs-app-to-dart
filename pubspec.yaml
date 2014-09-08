@@ -7,4 +7,4 @@ dependencies:
   template_binding: '>=0.12.1 <0.13.0'
 transformers:
 - polymer:
-    entry_points: web/arthurs_app.html
+    entry_points: web/index.html

@@ -11,7 +11,7 @@
     "text" : "Loving this Polymer thing.",
     "username" : "Rob",
     "avatar" : "../images/avatar-02.svg",
-    "favorite": true
+    "favorite": false
   },
     {
     "uid": 3,
@@ -25,7 +25,7 @@
     "text" : "Pretty sure I came up with that first.",
     "username" : "Ada",
     "avatar" : "../images/avatar-07.svg",
-    "favorite": true
+    "favorite": false
   },
   {
     "uid": 5,
@@ -39,7 +39,7 @@
     "text" : "Centralize, centrailize.",
     "username" : "John",
     "avatar" : "../images/avatar-04.svg",
-    "favorite": true
+    "favorite": false
   },
   {
     "uid": 7,
